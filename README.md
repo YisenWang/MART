@@ -10,5 +10,5 @@ Code for ICLR2020 "Improving Adversarial Robustness Requires Revisiting Misclass
 
 Simply run the code by: python3 train_model.py
 
-The trained model for WideResNet-34-10 (https://drive.google.com/open?id=1QjEwSskuq7yq86kRKNv6tkn9I16cEBjc)
+The MART trained CIFAR-10 model of WideResNet-34-10 (https://drive.google.com/open?id=1QjEwSskuq7yq86kRKNv6tkn9I16cEBjc)
 
