@@ -4,14 +4,6 @@ import torch.nn.functional as F
 from torch.autograd import Variable
 
 
-def criterion_kl(x, y, w=None, weighted=False):
-
-    if not weighted:
-        return torch.sum(y * (torch.log(y + 1e-12) - x))
-    else:
-        return torch.sum(torch.sum(y * (torch.log(y + 1e-12) - x), dim=1) * w)
-
-
 def mart_loss(model,
               x_natural,
               y,

@@ -64,6 +64,7 @@ use_cuda = not args.no_cuda and torch.cuda.is_available()
 torch.manual_seed(args.seed)
 device = torch.device("cuda" if use_cuda else "cpu")
 kwargs = {'num_workers': 10, 'pin_memory': True} if use_cuda else {}
+torch.backends.cudnn.benchmark = True
 
 # setup data loader
 transform_train = transforms.Compose([
