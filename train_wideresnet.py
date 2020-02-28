@@ -44,7 +44,7 @@ parser.add_argument('--seed', type=int, default=1, metavar='S',
                     help='random seed (default: 1)')
 parser.add_argument('--log-interval', type=int, default=100, metavar='N',
                     help='how many batches to wait before logging training status')
-parser.add_argument('--model-dir', default='./model-cifar-wideresnet',
+parser.add_argument('--model', default='wideresnet',
                     help='directory of model for saving checkpoint')
 parser.add_argument('--save-freq', '-s', default=1, type=int, metavar='N',
                     help='save frequency')
@@ -52,7 +52,7 @@ parser.add_argument('--save-freq', '-s', default=1, type=int, metavar='N',
 args = parser.parse_args()
 
 # settings
-model_dir = args.model_dir
+model_dir = args.model
 if not os.path.exists(model_dir):
     os.makedirs(model_dir)
     
@@ -165,9 +165,8 @@ def eval_adv_test_whitebox(model, device, test_loader):
 
 
 def main():
-    # init model, ResNet18() can be also used here for training
+
     model = WideResNet().to(device)
-    # model = ResNet18().to(device)
 
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay)   
     
