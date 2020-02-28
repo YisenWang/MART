@@ -2,14 +2,6 @@
 Code for ICLR2020 "Improving Adversarial Robustness Requires Revisiting Misclassified Examples"
 
 
-## Requirements
-- Python 3.7.4 
-- Pytorch 1.3.1
-- Part of the code is based on the following repo:
-  - Dynamic: https://github.com/YisenWang/dynamic_adv_training
-  - TREADES: https://github.com/yaodongyu/TRADES
-  - RST: https://github.com/yaircarmon/semisup-adv
-
 ## Usage
 python3 train_resnet.py for ResNet18
 
@@ -31,3 +23,11 @@ booktitle={International Conference on Learning Representations},
 year={2020}
 }
 ```
+
+## Requirements
+- Python 3.7.4 
+- Pytorch 1.3.1
+- Part of the code is based on the following repo:
+  - Dynamic: https://github.com/YisenWang/dynamic_adv_training
+  - TREADES: https://github.com/yaodongyu/TRADES
+  - RST: https://github.com/yaircarmon/semisup-adv
