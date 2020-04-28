@@ -12,6 +12,8 @@ The ResNet18 trained by MART on CIFAR-10: https://drive.google.com/file/d/1YAKnA
 
 The WideResNet-34-10 trained by MART on CIFAR-10: https://drive.google.com/open?id=1QjEwSskuq7yq86kRKNv6tkn9I16cEBjc
 
+MART WideResNet-28-10 model on 500K unlabeled data: https://drive.google.com/file/d/11pFwGmLfbLHB4EvccFcyHKvGb3fBy_VY/view?usp=sharing
+
 ## Citing this work
 If you use this code in your work, please cite the accompanying paper:
 
