@@ -19,10 +19,10 @@ If you use this code in your work, please cite the accompanying paper:
 
 ```
 @inproceedings{Wang2020Improving,
-title={Improving Adversarial Robustness Requires Revisiting Misclassified Examples},
-author={Yisen Wang and Difan Zou and Jinfeng Yi and James Bailey and Xingjun Ma and Quanquan Gu},
-booktitle={International Conference on Learning Representations},
-year={2020}
+    title={Improving Adversarial Robustness Requires Revisiting Misclassified Examples},
+    author={Yisen Wang and Difan Zou and Jinfeng Yi and James Bailey and Xingjun Ma and Quanquan Gu},
+    booktitle={ICLR},
+    year={2020}
 }
 ```
 
